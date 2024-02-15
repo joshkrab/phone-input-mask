@@ -1,0 +1,21 @@
+
+
+.input-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: stretch;
+}
+
+
+#phone-mask {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.progress-line{
+    width: 10px;
+    height: 3px;
+    background: rgb(255, 137, 0);
+}
