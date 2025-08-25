@@ -12,3 +12,17 @@ phoneMask.oninput = function () {
   progressLine.style.width = (w / 19) * this.value.length + "px";
   progressLine.style.backgroundColor = `rgb(${colorValue}, 137, 0)`;
 };
+
+function findMaxLengthWord(str) {
+  if (typeof str !== 'string') return 0;
+  // Using split(' ') instead of regex: this will include empty strings if there are multiple spaces
+  const words = str.split(' ');
+  let maxLength = 0;
+  for (const word of words) {
+    if (word.length > maxLength) {
+      maxLength = word.length;
+    }
+  }
+  return maxLength;
+}
+
